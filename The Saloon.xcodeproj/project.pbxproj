@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9322782879BF5200086684 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9322772879BF5200086684 /* LoginView.swift */; };
+		1F93227B2879C2B000086684 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1F93227A2879C2B000086684 /* FirebaseAuth */; };
+		1F93227D2879C33300086684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F93227C2879C33200086684 /* GoogleService-Info.plist */; };
+		1F9322802879C6FB00086684 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93227F2879C6FB00086684 /* HomeView.swift */; };
+		1F9322852879C96D00086684 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9322842879C96D00086684 /* CustomButton.swift */; };
+		1F9322872879D17A00086684 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9322862879D17A00086684 /* RegistrationView.swift */; };
 		1F9B1F9C2879BD05005E7566 /* The_SaloonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B1F9B2879BD05005E7566 /* The_SaloonApp.swift */; };
 		1F9B1F9E2879BD05005E7566 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B1F9D2879BD05005E7566 /* ContentView.swift */; };
 		1F9B1FA02879BD09005E7566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9B1F9F2879BD09005E7566 /* Assets.xcassets */; };
@@ -14,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F9322772879BF5200086684 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1F93227C2879C33200086684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F93227F2879C6FB00086684 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1F9322842879C96D00086684 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1F9322862879D17A00086684 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		1F9B1F982879BD05005E7566 /* The Saloon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Saloon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9B1F9B2879BD05005E7566 /* The_SaloonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_SaloonApp.swift; sourceTree = "<group>"; };
 		1F9B1F9D2879BD05005E7566 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +37,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F93227B2879C2B000086684 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9322752879BF2300086684 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F93227E2879C6E600086684 /* Core */,
+				1F9322762879BF3300086684 /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F9322762879BF3300086684 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1F9322772879BF5200086684 /* LoginView.swift */,
+				1F9322862879D17A00086684 /* RegistrationView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1F93227E2879C6E600086684 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1F93227F2879C6FB00086684 /* HomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1F9322812879C92A00086684 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F93227C2879C33200086684 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F9322822879C93900086684 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1F9322832879C94C00086684 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1F9322832879C94C00086684 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1F9322842879C96D00086684 /* CustomButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		1F9B1F8F2879BD05005E7566 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +113,9 @@
 		1F9B1F9A2879BD05005E7566 /* The Saloon */ = {
 			isa = PBXGroup;
 			children = (
+				1F9322822879C93900086684 /* Components */,
+				1F9322812879C92A00086684 /* Resources */,
+				1F9322752879BF2300086684 /* Views */,
 				1F9B1F9B2879BD05005E7566 /* The_SaloonApp.swift */,
 				1F9B1F9D2879BD05005E7566 /* ContentView.swift */,
 				1F9B1F9F2879BD09005E7566 /* Assets.xcassets */,
@@ -83,6 +148,9 @@
 			dependencies = (
 			);
 			name = "The Saloon";
+			packageProductDependencies = (
+				1F93227A2879C2B000086684 /* FirebaseAuth */,
+			);
 			productName = "The Saloon";
 			productReference = 1F9B1F982879BD05005E7566 /* The Saloon.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 1F9B1F8F2879BD05005E7566;
+			packageReferences = (
+				1F9322792879C2B000086684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1F9B1F992879BD05005E7566 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +198,7 @@
 			files = (
 				1F9B1FA32879BD09005E7566 /* Preview Assets.xcassets in Resources */,
 				1F9B1FA02879BD09005E7566 /* Assets.xcassets in Resources */,
+				1F93227D2879C33300086684 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9322782879BF5200086684 /* LoginView.swift in Sources */,
+				1F9322802879C6FB00086684 /* HomeView.swift in Sources */,
 				1F9B1F9E2879BD05005E7566 /* ContentView.swift in Sources */,
+				1F9322872879D17A00086684 /* RegistrationView.swift in Sources */,
 				1F9B1F9C2879BD05005E7566 /* The_SaloonApp.swift in Sources */,
+				1F9322852879C96D00086684 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F9322792879C2B000086684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F93227A2879C2B000086684 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9322792879C2B000086684 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F9B1F902879BD05005E7566 /* Project object */;
 }
