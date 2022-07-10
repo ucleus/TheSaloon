@@ -29,7 +29,7 @@ struct CustomButton: View {
                         .blendMode(.overlay)
                         .blur(radius: 8.0)
                         .mask(
-                            RoundedRectangle(cornerRadius: 16.0)
+                            RoundedRectangle(cornerRadius: 24.0)
                                 .frame(height: 50)
                                 .frame(maxWidth: geometry.size.width - 16)
                                 .blur(radius: 8.0)
@@ -41,11 +41,11 @@ struct CustomButton: View {
                         }
                     Text(buttonTitle)
                         .font(.headline)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("ThemePrimary"))
                         .frame(width: geometry.size.width - 16)
                         .frame(height: 50)
                         .background(
-                            Color.purple.opacity(0.9)
+                            Color("ThemeSecondary").opacity(0.9)
                         )
                         .overlay(
                             RoundedRectangle(cornerRadius: 20.0)
@@ -53,7 +53,7 @@ struct CustomButton: View {
                                 .blendMode(.normal)
                                 .opacity(0.7)
                         )
-                        .cornerRadius(20.0)
+                        .cornerRadius(24.0)
                 }
             }
             .frame(height: 50.0)
